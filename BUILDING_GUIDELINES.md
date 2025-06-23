@@ -63,8 +63,7 @@ zeek-notes/
 ```
 
 ## Development Phases
-
-### Phase 1: MVP Development (16 weeks)
+### Phase 1: Core Development (16 weeks)
 
 #### Weeks 1-2: Foundation Setup
 - [ ] Initialize Android Studio project with Kotlin
@@ -167,6 +166,12 @@ zeek-notes/
 - Live transcription display
 - Simple stop button
 - Title/tag addition before saving
+- Option to type notes manually
+
+#### Memo Recording Mode
+- Option for quick voice memos without extensive AI processing.
+- Focus on simple recording and playback.
+- Option to type notes manually.
 
 #### Meeting Recording Mode
 - Clear "Start Meeting Recording" button
@@ -218,6 +223,7 @@ zeek-notes/
 - Notes list view
 - Note detail view
 - Settings and profile
+- Home screen (displaying a sorted and filterable grid of notes/recordings and a prominent 'New' button at the bottom middle)
 
 ### 5. Security and Privacy
 
