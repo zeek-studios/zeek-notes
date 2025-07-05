@@ -1,0 +1,255 @@
+﻿🧠 ZEEK Notes – Development Summary Document
+________________
+
+
+📌 Overview
+ZEEK Notes is an AI-enhanced, cloud-based productivity and journaling app focused on Android (mobile-first) with a companion web dashboard. It combines advanced voice note-taking, transcription, task extraction, and diary logging into one smart productivity platform.
+The app consists of two main modules:
+1. Productivity / Notes & Meeting Capture
+
+2. Diary / Daily Reflection & AI Emotional Scoring
+
+________________
+
+
+📱 Platforms
+   * Mobile: Android (initially)
+
+   * Web: Cloud dashboard to access notes, tasks, diary entries
+
+   * Admin Panel: Web interface for app owner to manage users and analytics
+
+________________
+
+
+🔐 Authentication & User Access
+      * Login Method: Google Auth (via Firebase Auth)
+
+      * Cloud Storage & Sync: Firebase Firestore & Storage
+
+      * Subscription Model:
+
+         * 14-day free trial
+
+         * Paid Plan: €4.99/month per user (via Google Play + Stripe on Web)
+
+         * Users locked out of premium features post-trial unless upgraded
+
+________________
+
+
+🧩 Module 1: Productivity & Notes
+✅ Features:
+            * Voice & text note input
+
+            * Live transcription during recording (streamed to UI)
+
+            * Auto detection of note type (meeting, memo, lecture, etc.)
+
+            * Speaker recognition (for meetings)
+
+            * AI summarization of note content
+
+            * Task extraction (e.g., action items, deadlines)
+
+            * Automatic Google Calendar sync for detected events
+
+            * File, folder, and tag organization
+
+            * Smart search across notes
+
+            * Cloud sync (access from web & Android)
+
+________________
+
+
+📔 Module 2: Diary & Emotional AI
+✅ Features:
+               * Separate tab / section for diary entries
+
+               * User can record voice or type reflection
+
+               * AI transcribes diary entries
+
+               * AI evaluates and scores the day based on:
+
+                  * Mood / Sentiment
+
+                  * Productivity
+
+                  * Social Interaction
+
+                  * Energy / Motivation
+
+                  * Reflection Depth
+
+                     * Score shown with visual meter (e.g., emoji + chart)
+
+                     * Diary calendar to see emotional trends over time
+
+                     * Streak & habit tracking for diary usage
+
+                     * Data stored privately under “Diary” category
+
+________________
+
+
+🕹️ Gamification Layer (Both Modules)
+✅ Features:
+                        * ZEEK Streaks: Daily app usage tracker (builds XP)
+
+                        * XP System: Earn XP for note-taking, task extraction, diary entries
+
+                        * User Levels & Badges: Visual awards (e.g., “Note Ninja”, “Mind Mapper”)
+
+                        * Weekly Challenges: Auto-generated goals (e.g., “Record 3 voice notes this week”)
+
+                        * Push Notifications: Triggered by inactivity, streaks, badge unlocks
+
+________________
+
+
+💬 Feedback & Engagement System
+✅ Features:
+                           * In-app thumbs-up/down on summaries, tasks, etc.
+
+                           * Feature request submission form
+
+                           * Mini-surveys (e.g., after first week of usage)
+
+                           * Optional diagnostics/logs with feedback
+
+________________
+
+
+🔧 Admin Panel
+✅ Features:
+                              * View all users & subscription status
+
+                              * App usage analytics:
+
+                                 * Notes recorded
+
+                                 * Tasks extracted
+
+                                 * Active days, XP trends, diary score patterns
+
+                                    * Search/filter by user
+
+                                    * Push announcements to all users
+
+                                    * Export user data (CSV)
+
+                                    * View billing info via Stripe dashboard (web)
+
+________________
+
+
+🔔 Notifications (Push System)
+                                       * Push via Firebase Cloud Messaging (FCM)
+
+                                       * Sent based on:
+
+                                          * Streaks (daily)
+
+                                          * Diary trends
+
+                                          * New badges
+
+                                          * Weekly summaries
+
+                                          * Inactivity triggers
+
+________________
+
+
+🛠️ Tech Stack Suggestions
+Layer
+	Tool/Tech
+	Mobile App
+	Kotlin (or Flutter) for Android
+	Web App
+	React + Tailwind
+	Backend
+	Firebase (Auth, Firestore, Functions, Storage)
+	AI Services
+	Whisper / Deepgram for STT, GPT / transformers for NLP
+	Task Extraction
+	Custom NLP pipelines or GPT+rules
+	Sentiment Analysis
+	TextBlob / VADER / HuggingFace models
+	Calendar Sync
+	Google Calendar API
+	Payments
+	Google Play Billing + Stripe (Web)
+	Push Notifications
+	Firebase Cloud Messaging
+	________________
+
+
+🔄 Suggested Flow for Users
+                                             1. Onboarding:
+
+                                                * Sign in with Google → Select primary intent (Productivity / Diary) → Quick walkthrough
+
+                                                   2. Notes Module:
+
+                                                      * Record or type → Live transcription → AI processing → Summary → Tasks → Calendar Sync → Organized
+
+                                                         3. Diary Module:
+
+                                                            * Record/Type reflection → Transcription → AI scoring → Mood chart → Streak tracking
+
+                                                               4. Gamification:
+
+                                                                  * XP earned → Levels/Badges → Weekly challenge → Notifications
+
+                                                                     5. Web Platform:
+
+                                                                        * View/edit notes, tasks, diary entries
+
+                                                                        * Download/export content
+
+                                                                        * Manage subscription
+
+________________
+
+
+🧪 AI Prompting (High-Level Outline)
+For notes:
+"Transcribe this audio. Identify key action items, summarize main points, classify type (meeting, memo, etc.), and list any dates or deadlines mentioned."
+For diary:
+"Transcribe and evaluate this diary entry. Rate the mood, productivity, social interaction, energy, and reflection quality on a 1–10 scale. Provide an overall day score and highlight positive or negative language cues."
+________________
+
+
+🗂️ Key Deliverables Expected from Dev Team
+                                                                           * Fully functioning Android app
+
+                                                                           * Connected Firebase backend
+
+                                                                           * Operational web dashboard
+
+                                                                           * Admin panel for analytics & management
+
+                                                                           * Integration with AI APIs (or internal NLP pipelines)
+
+                                                                           * Google Calendar and billing integration
+
+                                                                           * Clean, modern UI/UX design
+
+                                                                           * Scalable architecture and data schema
+
+                                                                           * Deployment + onboarding docs
+
+________________
+
+
+Would you like this exported as:
+                                                                              * A PDF or Notion doc?
+
+                                                                              * A Trello or ClickUp task breakdown?
+
+                                                                              * A scope doc for Upwork or Fiverr agency listing?
+
+Let me know and I’ll package it for handoff.

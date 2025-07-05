@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">ZEEK Notes</string>
+    
+    <!-- Onboarding -->
+    <string name="welcome_title">Welcome to ZEEK Notes</string>
+    <string name="welcome_subtitle">Your AI-powered note-taking companion</string>
+    <string name="continue_with_google">Continue with Google</string>
+    
+    <!-- Features -->
+    <string name="feature_voice_recording">🎤 Voice recording with AI transcription</string>
+    <string name="feature_smart_organization">📝 Smart note organization</string>
+    <string name="feature_ai_summaries">🤖 AI-powered summaries and insights</string>
+    <string name="feature_cloud_sync">☁️ Cloud sync across devices</string>
+    
+    <!-- Home Screen -->
+    <string name="no_notes_title">No notes yet</string>
+    <string name="no_notes_subtitle">Tap the + button to create your first note</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="new_note">New Note</string>
+    
+    <!-- Note Types -->
+    <string name="quick_note">Quick Note</string>
+    <string name="quick_note_description">Capture a quick thought or idea</string>
+    <string name="memo">Memo</string>
+    <string name="memo_description">Record a detailed memo with AI analysis</string>
+    <string name="meeting">Meeting</string>
+    <string name="meeting_description">Record meeting with speaker identification</string>
+    
+    <!-- Recording -->
+    <string name="recording">Recording...</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="listening">Listening...</string>
+    <string name="live_transcription">Live Transcription</string>
+    <string name="transcription">Transcription</string>
+    <string name="no_transcription">No transcription available</string>
+    
+    <!-- Actions -->
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <string name="create_new_note">Create New Note</string>
+    
+    <!-- Permissions -->
+    <string name="microphone_permission_required">Microphone permission is required for recording</string>
+    <string name="storage_permission_required">Storage permission is required to save recordings</string>
+    
+    <!-- Errors -->
+    <string name="sign_in_failed">Sign in failed</string>
+    <string name="recording_failed">Failed to start recording</string>
+    <string name="save_failed">Failed to save note</string>
+    <string name="load_failed">Failed to load notes</string>
+    <string name="error_occurred">An error occurred</string>
+</resources>

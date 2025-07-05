@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="@color/zeek_primary"
+        android:pathData="M24,24m-22,0a22,22 0,1 1,44 0a22,22 0,1 1,-44 0" />
+    
+    <!-- Microphone icon -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M24,28c2.2,0 4,-1.8 4,-4V16c0,-2.2 -1.8,-4 -4,-4s-4,1.8 -4,4v8C20,26.2 21.8,28 24,28z" />
+    
+    <!-- Microphone stand -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M30,24c0,3.3 -2.7,6 -6,6s-6,-2.7 -6,-6h-2c0,4.4 3.6,8 8,8v4h-4v2h10v-2h-4v-4C29.4,32 32,28.4 32,24H30z" />
+    
+</vector>

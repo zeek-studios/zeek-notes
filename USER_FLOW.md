@@ -34,6 +34,8 @@ graph TD
     R --> S[Playback with Timestamps]
     S --> K
 
+    S --> K
+
     K -- Select Note --> T[Note Details View]
     T -- Edit --> J
     T -- Play Audio --> M
@@ -47,7 +49,7 @@ graph TD
     E -- Tap Premium --> X[Premium Subscription Page]
     X --> Y[Feature Comparison]
     Y --> Z[Initiate Purchase (Google Play Billing)]
-    Z --> AA[Subscription Management]
+    Z --> AA[Subscription Management (Google Play Billing)]
     AA --> E
 
     E -- Tap Settings --> BB[Settings & Profile]
@@ -68,4 +70,27 @@ graph TD
     AA --> E
     BB --> E
     F --> E
+
+    E -- Tap Diary/Reflection --> DIARY[Diary / Daily Reflection]
+    DIARY -- Voice/Text Input --> DIARY_TRANS[AI Transcription]
+    DIARY_TRANS --> DIARY_EVAL[AI Emotional Scoring]
+    DIARY_EVAL --> DIARY_VISUAL[Visual Score Display (Emoji + Chart)]
+    DIARY_VISUAL --> DIARY_CAL[Diary Calendar (Emotional Trends)]
+    DIARY_CAL --> DIARY_STREAK[Streak & Habit Tracking]
+    DIARY_STREAK --> E
+
+    G --> XP_NOTE[Earn XP (Note-taking)]
+    L --> XP_MEMO[Earn XP (Memo)]
+    O --> XP_MEETING[Earn XP (Meeting)]
+    DIARY_TRANS --> XP_DIARY[Earn XP (Diary Entry)]
+
+    XP_NOTE --> GAM_LAYER[Gamification Layer]
+    XP_MEMO --> GAM_LAYER
+    XP_MEETING --> GAM_LAYER
+    XP_DIARY --> GAM_LAYER
+
+    GAM_LAYER -- ZEEK Streaks --> E
+    GAM_LAYER -- User Levels & Badges --> E
+    GAM_LAYER -- Weekly Challenges --> E
+    GAM_LAYER -- Push Notifications --> E
 ```

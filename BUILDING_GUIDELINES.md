@@ -150,7 +150,7 @@ zeek-notes/
 
 ### Phase 3: Future Enhancements
 
-- Meeting platform integration (Teams, Zoom, Google Meet)
+- Meeting platform integration (Teams, Zoom, Google Meet) - *Architectural consideration for this feature should be made from the outset to ensure seamless future integration.*
 - Cross-device synchronization
 - Advanced task management
 - Collaboration features
@@ -223,7 +223,34 @@ zeek-notes/
 - Notes list view
 - Note detail view
 - Settings and profile
-- Home screen (displaying a sorted and filterable grid of notes/recordings and a prominent 'New' button at the bottom middle)
+*   **UI/UX**: Material Design Guidelines, focusing on an intuitive and clean design with a home screen displaying a sorted and filterable grid of notes/recordings and a prominent 'New' button. To facilitate early preview and rapid iteration, a development setup with hot-reloading or live preview capabilities will be prioritized.
+- **Module 2: Diary & Emotional AI**:
+  - Separate tab/section for diary entries
+  - Voice or text reflection input
+  - AI transcription of diary entries
+  - AI evaluation and scoring of the day (Mood/Sentiment, Productivity, Social Interaction, Energy/Motivation, Reflection Depth)
+  - Visual score display (emoji + chart)
+  - Diary calendar for emotional trends
+  - Streak & habit tracking for diary usage
+  - Private data storage under "Diary" category
+- **Gamification Layer**:
+  - ZEEK Streaks: Daily app usage tracker (builds XP)
+  - XP System: Earn XP for note-taking, task extraction, diary entries
+  - User Levels & Badges: Visual awards
+  - Weekly Challenges: Auto-generated goals
+  - Push Notifications: Triggered by inactivity, streaks, badge unlocks
+- **Feedback & Engagement System**:
+  - In-app thumbs-up/down on summaries, tasks, etc.
+  - Feature request submission form
+  - Mini-surveys
+  - Optional diagnostics/logs with feedback
+- **Admin Panel**:
+  - User & subscription management
+  - App usage analytics
+  - Search/filter by user
+  - Push announcements
+  - Export user data (CSV)
+  - View billing info via Stripe dashboard (web)
 
 ### 5. Security and Privacy
 
@@ -235,9 +262,10 @@ zeek-notes/
 
 ### 6. Pricing Model
 
-- **Freemium Tier**: Basic features available for free.
-- **Premium Tier**: Advanced features available for 4.99 Euro per month per user.
-- **Payment Gateway**: Google Play Billing will handle all premium subscription payments.
+- **Subscription Model**:
+  - 14-day free trial
+  - Paid Plan: €4.99/month per user (via Google Play Billing on Android)
+  - Users locked out of premium features post-trial unless upgraded
 
 ### 7. Testing Strategy
 
@@ -416,6 +444,10 @@ jobs:
 - **Robolectric**: Android unit testing
 
 ### 8. Deployment Guidelines
+
+- **Deployment**:
+  - Google Play Store (Android)
+  - Web Dashboard
 
 ### 13. Pre-deployment Checklist (Updated)
 - [ ] All features tested in staging environment

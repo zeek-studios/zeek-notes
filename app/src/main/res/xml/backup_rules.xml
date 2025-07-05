@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Exclude sensitive data from backup -->
+    <exclude domain="sharedpref" path="auth_prefs.xml" />
+    <exclude domain="database" path="user_sessions.db" />
+    <!-- Include app data that should be backed up -->
+    <include domain="file" path="notes/" />
+    <include domain="sharedpref" path="app_preferences.xml" />
+</full-backup-content>
